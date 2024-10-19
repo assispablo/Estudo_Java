@@ -12,7 +12,7 @@ public class Exchange {
     }
 
     public static void main(String[] args) {
-        Exchange exchange = new Exchange();  //alteração de no exchange, trocando a letra maiuscula por minuscula
+        Exchange exchange = new Exchange();
         double valorReal = 1000;
         double valorDolar = exchange.comprarDolar(valorReal);
         System.out.println("Valor em dólar: " + valorDolar);
