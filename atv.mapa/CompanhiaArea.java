@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.ultil.List;
 
 public class CompanhiaArea {
     private String nome;
@@ -7,7 +6,7 @@ public class CompanhiaArea {
 
     public CompanhiaArea(String nome) {
         this.nome = nome;
-        this.voos = new ArrayList<Voo> ();
+        this.voos = new ArrayList<> ();
     }
     
     public void adicionarVoo (Voo voo) {
@@ -18,7 +17,15 @@ public class CompanhiaArea {
         return nome;
     }
 
-    public List<Voo> getVoos () {
+    public ArrayList<Voo> getVoos () {
         return voos;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setVoos(ArrayList<Voo> voos) {
+        this.voos = voos;
     }
 }
